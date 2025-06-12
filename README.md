@@ -45,3 +45,14 @@ Requiere windows.h solo para el Sleep() y el contador de rendimiento.
 ## ¿Por qué hice esto?
 Porque me encanta resolver problemas con lógica y hacer que el código cobre vida en pantalla.
 Este proyecto fue una excusa perfecta para practicar estructuras dinámicas, recursividad, backtracking, generación procedural, interacción con el usuario.
+
+## Cómo compilar correctamente
+Asegurate de correr este comando:
+```bash
+gcc main.c laberinto.c -o laberinto
+```
+Esto generará el ejecutable laberinto.exe.
+
+Luego ejecutalo con:
+```bash
+.\laberinto.exe
