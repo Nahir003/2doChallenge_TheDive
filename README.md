@@ -9,9 +9,10 @@ Es un codigo que fue programado en C, con visualización animada en consola, exp
 Utilicé una versión del algoritmo DFS (Depth-First Search) pero en forma iterativa con una pila manual. Solo se recorren celdas impares, y se abren caminos conectando vecinos saltando de dos en dos. Así me aseguro que siempre haya paredes entre caminos y se mantenga la estructura tipo "pared-camino-pared".
 También agregué una función opcional que mete unos cuantos caminos extra, para que el laberinto no sea tan lineal y tenga más posibilidades sin romper la solvencia.
 
-## Resolución automática con backtracking
+## ¿Qué algoritmo usé para resolverlo.
 Para resolver el laberinto, programé un algoritmo de Backtracking clásico, que arranca desde la entrada y prueba todos los caminos hasta encontrar la salida. Si activás el modo visual, podés ver cómo se va moviendo paso a paso. Cuando encuentra el camino, lo deja marcado para visualizarlo.
 Además, medí el tiempo de resolución usando QueryPerformanceCounter para tener precisión en milisegundos.
+El backtracking es muy rápido (menos de 0.01s en 21x21). En modo visual se vuelve más lento por la animación. La próxima vez probaría BFS y compararía eficiencia en distintos tipos de laberintos.
 
 ## Modos que incluí
 - Exploración manual: Podés moverte con WASD dentro del laberinto como jugador.
